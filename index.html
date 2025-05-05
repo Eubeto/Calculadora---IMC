@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA - IMC</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        background-color: rgb(241, 241, 241);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+    }
+
+    .titulo {
+        width: 400px;
+        height: 400px;
+        background-color: aquamarine;
+        border-radius: 5px;
+        padding-top: 20px;
+        text-align: center;
+
+    }
+
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 400px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .result {
+
+        background-color: aliceblue;
+        padding: 50px;
+        border-radius: 10px;
+    }
+
+    .calcular {
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <main>
+        <div class="titulo">
+            <p>CALCULE SEU IMC</p>
+            <p>__________________________________________________</p>
+            <div class="container">
+                <div class="input">
+                    <label> Nome:</label>
+                    <input type="text" id='nome'>
+                </div>
+                <div class="input">
+                    <label> Altura:</label>
+                    <input type="number" id='altura'>
+                </div>
+                <div class="input">
+                    <label> Peso : </label>
+                    <input type="number" id='peso'>
+                </div>
+                <button class="calcular" id="calcular">CALCULAR</button>
+            </div>
+            <div class="result" id="result">
+                <p> RESULTADO</p>
+            </div>
+
+
+    </main>
+    <script src="imc.js"></script>
+</body>
+
+</html>
